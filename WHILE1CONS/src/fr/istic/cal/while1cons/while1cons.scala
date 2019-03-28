@@ -54,7 +54,12 @@ object While1cons {
    * que l'expression et une expression qui contient le résultat
    */
   // TODO TP4
-  def while1ConsExprV(expression: Expression): (List[Command], Variable) = {???}
+  def while1ConsExprV(expression: Expression): (List[Command], Variable) = {
+    expression match {
+      case Nl => List (Set (Var ("A0") , Nl), Var ("A0"))
+      case 
+    }
+  }
 
   /**
    * @param expression : un AST décrivant une expression du langage WHILE
